@@ -32,7 +32,7 @@ cd task-api
 No diretório do projeto, instale as dependências do projeto usando o npm:
 
 ```bash
-Copiar código
+
 npm install
 ```
 
@@ -40,7 +40,7 @@ npm install
 Crie um arquivo .env na raiz do projeto com as variáveis de ambiente necessárias:
 
 ```env
-Copiar código
+
 MONGO_URI=mongodb+srv://<usuario>:<senha>@cluster0.deyip.mongodb.net/bancodeoseias?retryWrites=true&w=majority
 Substitua <usuario> e <senha> pelas suas credenciais de acesso ao MongoDB Atlas ou outro banco de dados MongoDB.
 ```
@@ -49,7 +49,7 @@ Substitua <usuario> e <senha> pelas suas credenciais de acesso ao MongoDB Atlas 
 Para iniciar o servidor, execute o comando:
 
 ```bash
-Copiar código
+
 npm start
 O servidor estará rodando na porta 3000.
 ```
@@ -61,10 +61,10 @@ URL: /api/tasks
 
 Método: POST
 
-Corpo da Requisição:
+# Corpo da Requisição:
 
-json
-Copiar código
+```json
+
 {
   "title": "Título da tarefa",
   "description": "Descrição da tarefa"
@@ -72,9 +72,10 @@ Copiar código
 Resposta:
 
 Código: 201 Created
-Corpo:
+```
+# Corpo:
 json
-Copiar código
+
 {
   "_id": "id-da-tarefa",
   "title": "Título da tarefa",
@@ -91,7 +92,7 @@ Resposta:
 Código: 200 OK
 Corpo:
 json
-Copiar código
+
 [
   {
     "_id": "id-da-tarefa",
@@ -112,7 +113,7 @@ id: ID da tarefa a ser atualizada.
 Corpo da Requisição:
 
 json
-Copiar código
+
 {
   "title": "Novo título da tarefa",
   "description": "Nova descrição da tarefa",
@@ -123,7 +124,7 @@ Resposta:
 Código: 200 OK
 Corpo:
 json
-Copiar código
+
 {
   "_id": "id-da-tarefa",
   "title": "Novo título da tarefa",
@@ -143,7 +144,7 @@ Resposta:
 Código: 200 OK
 Corpo:
 json
-Copiar código
+
 {
   "message": "Tarefa deletada com sucesso"
 }
@@ -154,7 +155,7 @@ Método: POST
 URL: http://localhost:3000/api/tasks
 Corpo da Requisição:
 json
-Copiar código
+
 {
   "title": "Nova Tarefa",
   "description": "Descrição da nova tarefa"
@@ -169,7 +170,7 @@ Método: PUT
 URL: http://localhost:3000/api/tasks/:id (substitua :id pelo ID da tarefa)
 Corpo da Requisição:
 json
-Copiar código
+
 {
   "title": "Título Atualizado",
   "description": "Descrição atualizada",
@@ -191,7 +192,7 @@ Licença
 Este projeto está licenciado sob a MIT License.
 
 css
-Copiar código
+
 
 Este é o README completo em formato **Markdown**. Você pode copiá-lo e usar em seu projeto.
 
