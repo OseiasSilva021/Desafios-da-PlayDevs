@@ -48,13 +48,15 @@ Substitua <usuario> e <senha> pelas suas credenciais de acesso ao MongoDB Atlas 
 ### 4. Iniciar o servidor
 Para iniciar o servidor, execute o comando:
 
-bash
+```bash
 Copiar código
 npm start
 O servidor estará rodando na porta 3000.
+```
 
 # Endpoints
 ### 1. Criar Tarefa
+
 URL: /api/tasks
 
 Método: POST
